@@ -12,9 +12,9 @@ jobs:
             run: echo "$PAYLOAD_CONTEXT"
 
           - uses: actions/checkout@v4
-            if: github.event.client_payload.ref != ''
             with:
-                ref: ${{ github.event.client_payload.ref }}
+                repository: nm515350/pages_private
+                path: specifications
 
           - run: echo ${{ github.event.client_payload.sha }}
           
