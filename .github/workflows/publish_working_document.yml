@@ -19,4 +19,6 @@ jobs:
                 token: ${{ secrets.PAT }}
 
           - run: echo ${{ github.event.client_payload.sha }}
+
+          - run: cat specifications/LICENSE
           
